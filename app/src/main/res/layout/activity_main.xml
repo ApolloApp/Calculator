@@ -29,6 +29,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnSeven"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -37,6 +38,7 @@
           tools:ignore="UsingOnClickInXml" />
       <Button
           android:layout_margin="2dp"
+          android:textSize="20sp"
           android:id="@+id/btnEight"
           android:layout_width="0dp"
           android:layout_height="match_parent"
@@ -46,6 +48,7 @@
           tools:ignore="UsingOnClickInXml" />
       <Button
           android:layout_margin="2dp"
+          android:textSize="20sp"
           android:id="@+id/btnNine"
           android:layout_width="0dp"
           android:layout_height="match_parent"
@@ -56,15 +59,18 @@
 
       <Button
           android:id="@+id/btnDivide"
+          android:textSize="20sp"
+          android:layout_margin="2dp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
-          android:onClick="onDigit"
+          android:onClick="onOperator"
           android:text="@string/Divide"
           tools:ignore="UsingOnClickInXml" />
    </LinearLayout>
    <LinearLayout
        android:layout_width="match_parent"
+
        android:layout_height="wrap_content"
        android:orientation="horizontal"
        android:layout_weight="1"
@@ -73,6 +79,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnFour"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -82,6 +89,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnEive"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -91,6 +99,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnSix"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -100,10 +109,12 @@
 
       <Button
           android:id="@+id/btnMultiply"
+          android:layout_margin="2dp"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
-          android:onClick="onDigit"
+          android:onClick="onOperator"
           android:text="@string/multiply"
           tools:ignore="UsingOnClickInXml" />
    </LinearLayout>
@@ -117,6 +128,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnOne"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -126,6 +138,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnTwo"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -134,6 +147,7 @@
           tools:ignore="UsingOnClickInXml" />
       <Button
           android:layout_margin="2dp"
+          android:textSize="20sp"
           android:id="@+id/btnThree"
           android:layout_width="0dp"
           android:layout_height="match_parent"
@@ -144,10 +158,12 @@
 
       <Button
           android:id="@+id/btnMinus"
+          android:layout_margin="2dp"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
-          android:onClick="onDigit"
+          android:onClick="onOperator"
           android:text="@string/Minus"
           tools:ignore="UsingOnClickInXml" />
    </LinearLayout>
@@ -161,6 +177,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnDot"
+          android:textSize="30sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -170,6 +187,7 @@
       <Button
           android:layout_margin="2dp"
           android:id="@+id/btnZero"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -180,20 +198,25 @@
 
       <Button
           android:layout_margin="2dp"
-          android:id="@+id/btnCLR"
+          android:id="@+id/btnEqual"
+          android:textSize="30sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
-          android:onClick="onClear"
-          android:text="@string/clr"
-          tools:ignore="UsingOnClickInXml" />
+          android:onClick="onEqual"
+          android:text="@string/equal"
+          tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+
 
       <Button
           android:id="@+id/btnPlus"
+          android:textSize="20sp"
+          android:layout_margin="2dp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight="1"
-          android:onClick="onDigit"
+          android:onClick="onOperator"
           android:text="@string/Plus"
           tools:ignore="UsingOnClickInXml" />
    </LinearLayout>
@@ -206,13 +229,15 @@
        >
       <Button
           android:layout_margin="2dp"
-          android:id="@+id/btnEqual"
+          android:id="@+id/btnCLR"
+          android:textSize="20sp"
           android:layout_width="0dp"
           android:layout_height="match_parent"
-          android:layout_weight="2"
-          android:onClick="onDigit"
-          android:text="@string/equal"
-          tools:ignore="NestedWeights,UsingOnClickInXml" />
+          android:layout_weight="1"
+          android:onClick="onClear"
+          android:text="clear"
+          tools:ignore="UsingOnClickInXml" />
+
 
 
    </LinearLayout>
